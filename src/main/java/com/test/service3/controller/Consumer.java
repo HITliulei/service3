@@ -40,6 +40,8 @@ public class Consumer {
         return mSendRequest.sendRequest("http://gateway/service2/provider/postTest", User.class, RequestMethod.POST,user);
     }
 
-
-
+    @GetMapping("/get4")
+    public String a(){
+        return mSendRequest.sendRequest("http://gateway/service2/provider/only", String.class, RequestMethod.GET);
+    }
 }

@@ -29,4 +29,9 @@ public class provider {
         a.setName("service3");
         return a;
     }
+
+    @GetMapping("/only")
+    public String a(){
+        return "only 2.0 have";
+    }
 }
