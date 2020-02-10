@@ -23,8 +23,6 @@ public class Consumer {
     @Autowired
     private MSendRequest mSendRequest;
 
-
-
     @GetMapping("/get1")
     public User f(){
         return mSendRequest.sendRequest("http://gateway/service2/provider/getTest","1.0.0", User.class, RequestMethod.GET);
